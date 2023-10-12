@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WyvLauncher", "WyvLauncher\WyvLauncher.csproj", "{2FACBD83-A338-43CF-AE19-C7C38F60C071}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FACBD83-A338-43CF-AE19-C7C38F60C071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FACBD83-A338-43CF-AE19-C7C38F60C071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FACBD83-A338-43CF-AE19-C7C38F60C071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FACBD83-A338-43CF-AE19-C7C38F60C071}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04B510D5-CCCE-4E26-9AC3-AD86423D695C}
+	EndGlobalSection
+EndGlobal
