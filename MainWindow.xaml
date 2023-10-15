@@ -1,0 +1,181 @@
+﻿<Window x:Class="ProjectWyvern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWyvern"
+        Background="#8BE0F9"
+        WindowStyle="None"
+        ResizeMode="CanMinimize"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="	1600">
+
+    <Grid>
+        <Border MouseDown="Border_MouseDown" MouseMove="Border_MouseMove" MouseUp="Border_MouseUp"  Margin="0,0,0,860" Background="White"></Border>
+        <TextBlock  x:Name="STATUS" Text="WYVERN" Margin="10,13,1187,857" FontFamily="Arial Black" Foreground="#FF8B97FF" ></TextBlock>
+        <Button Margin="1560,5,10,865" Click="CloseApp" Foreground="Transparent" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush ImageSource="\img\Componen1.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Margin="1525,5,45,865" Click="MinimizeApp" Foreground="Transparent" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush ImageSource="\img\minimize.png"/>
+            </Button.Background>
+        </Button>
+        <Border Background="White"  Margin="42,74,45,704" CornerRadius="14,14,14,14">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Direction="0" BlurRadius="98" Color="#FF909090" RenderingBias="Performance" Opacity="0.2"  />
+            </Border.Effect>
+        </Border>
+
+        <Border Margin="1450,95,70,725"  BorderThickness="1" RenderTransformOrigin="0.5,0.5" CornerRadius="90,90,90,90" BorderBrush="Black">
+            <Border.Background>
+                <ImageBrush x:Name="img" ImageSource="/img/120584-200.png"/>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <ComboBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="comboBox" Margin="1046,102,316,730" Background="White" Foreground="#FF8B97FF">
+            <ComboBox.Effect>
+                <DropShadowEffect BlurRadius="40" Direction="0" Opacity="0.3"/>
+            </ComboBox.Effect>
+        </ComboBox>
+        <TextBlock x:Name="ussername" Text="Гость" Margin="1350,117,150,755" FontSize="20" FontFamily="Candara" Foreground="#FF001AF7"></TextBlock>
+        <TextBlock x:Name="prsefix" Text="User" Margin="1350,141,150,731" FontSize="14" FontFamily="Candara Light" Foreground="#FF7A88FF"/>
+        <Border  Background="#FF11C7E8" Margin="687,102,617,730">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="100" Opacity="0.3"/>
+            </Border.Effect>
+            <TextBox   x:Name="TextBox1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Text="Steve" Background="{x:Null}" Foreground="#FF001AF7" FontSize="36" FontFamily="Segoe UI Light" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}"/>
+        </Border>
+
+        <Button x:Name="btn" Margin="606,106,947,736" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="launch">
+            <Button.Background>
+                <ImageBrush ImageSource="/img/Polygon 3.png"/>
+            </Button.Background>
+        </Button>
+        <Border Background="White"  Margin="42,254,1177,60" CornerRadius="14,14,14,14">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Direction="0" BlurRadius="98" Color="#FF909090" RenderingBias="Performance" Opacity="0.2"  />
+            </Border.Effect>
+        </Border>
+        <Border Background="White"  Margin="1222,254,45,60" CornerRadius="14,14,14,14">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Direction="0" BlurRadius="98" Color="#FF909090" RenderingBias="Performance" Opacity="0.2"  />
+            </Border.Effect>
+        </Border>
+        <Border Background="White"  Margin="476,254,416,60" CornerRadius="14,14,14,14">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="0" Direction="0" BlurRadius="98" Color="#FF909090" RenderingBias="Performance" Opacity="0.2"  />
+            </Border.Effect>
+        </Border>
+        <TextBlock Margin="509,270,439,521" FontSize="24" FontFamily="Bahnschrift" Foreground="#FF001AF7"><Run Text="Дневник разработчик"/><Run Language="ru-ru" Text="а."/></TextBlock>
+        <TextBlock Margin="509,314,439,477" FontSize="24" Foreground="#FF6F7EFF"><Run Language="ru-ru" Text="Обновление "/><Run Text="Alpha 1.1:"/></TextBlock>
+        <TextBlock Margin="509,353,508,218" FontSize="24" Foreground="#FF6F7EFF"><Run Text="-"/><Run Text=" Заставили программиста пофиксить баги."/><LineBreak/><Run Text="- Наш дизайнер доел бутерброды."/><LineBreak/><Run Text="- Мы совсем чуть чуть провели ребрендинг и "/><LineBreak/><Run Text="редизайн...."/><LineBreak/><Run Text="- Наш райтер попытался продать наш бесплатный"/><LineBreak/><Run Text=" лаунчер за 25 лир. "/><LineBreak/><Run Text="- Программист готов выйти в окно потому что не "/><LineBreak/><Run Text="знает как защитить будущую базу данных от "/><Run Text="SQL"/><LineBreak/><Run Text=" "/><Run Text="иньекций."/><LineBreak/><Run Text="- Жадные ребята выпрашивают донат на бусти. "/><LineBreak/><Run/></TextBlock>
+        <TextBlock Margin="509,314,439,477" FontSize="24" Foreground="#FF6F7EFF"><Run Language="ru-ru" Text="Обновление "/><Run Text="Alpha 1.1:"/></TextBlock>
+        <TextBlock Margin="66,270,1177,586" FontSize="24" FontFamily="Bahnschrift" Foreground="#FF001AF7"><Run Language="ru-ru" Text="Наши спонсоры."/></TextBlock>
+        <TextBlock Margin="66,314,1226,477" FontSize="24" Foreground="#FF6F7EFF"><Run Text="Тут пусто....."/><LineBreak/><Run Language="ru-ru" Text="Но  ты можешь стать им!"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock Margin="66,405,1226,455" FontSize="24" Foreground="#FF6F7EFF"><Run Language="ru-ru" Text="Плюсы быть спонсором."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock Margin="66,447,1226,96" FontSize="24" Foreground="#FF919DFF"><Run Text="- Вот там сверху будет не "/><LineBreak/><Run Text="гость а ты) И "/><Run Language="ru-ru" Text="ава твоя будет. Также "/><Run Text="можешь "/><LineBreak/><Run Text="поставить себе любой "/><LineBreak/><Run Text="префикс."/><LineBreak/><LineBreak/><Run Text="- На последнем уровне "/><LineBreak/><Run Text="подписки"/><Run Text=". По вашему "/><LineBreak/><Run Text="желанию мы сделаем "/><LineBreak/><Run Text="версию лаунчера для вас "/><LineBreak/><Run Text="по вашему дизайну."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <Border  Margin="1249,306,248,490"   BorderThickness="1" RenderTransformOrigin="0.5,0.5" CornerRadius="90,90,90,90" BorderBrush="Black">
+            <Border.Background>
+                <ImageBrush ImageSource="/img/3252223ad7d98ce252662564edede3af.jpg"  >
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="-2"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform X="-0.3"/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <TextBlock Text="LazyExtera" Margin="1362,332,110,532" FontSize="22" FontFamily="Candara" Foreground="#FF001AF7"/>
+        <TextBlock Margin="1362,364,110,498" FontSize="16" FontFamily="Candara Light" Foreground="#FF7A88FF"><Run Text="Design &amp; Jokes"/><LineBreak/><Run/></TextBlock>
+        <Image Margin="1472,366,110,516" Source="/img/icons8-дизайнер-48.png" Stretch="Fill"/>
+        <Border Margin="1249,426,248,371"  BorderThickness="1" RenderTransformOrigin="0.5,0.5" CornerRadius="90,90,90,90" BorderBrush="Black">
+            <Border.Background>
+                <ImageBrush ImageSource="/img/cf816145123ebe28e06040cd5afcab98 (1).jpg"  >
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="1"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <TextBlock Text="Ayanami" Margin="1362,449,127,415" FontSize="22" FontFamily="Candara" Foreground="#FF001AF7"/>
+        <TextBlock Text="Coder" Margin="1362,485,127,380" FontSize="18" FontFamily="Candara Light" Foreground="#FF7A88FF"/>
+        <Image Margin="1415,490,166,394" Source="/img/icons8-разработчик-50 (1).png" Stretch="Fill" RenderTransformOrigin="0.789,0.778"/>
+        <TextBlock Margin="1249,270,-301,586" FontSize="24" FontFamily="Bahnschrift" Foreground="#FF001AF7"><Run Language="ru-ru" Text="Наша команда"/></TextBlock>
+        <Border Margin="1249,559,248,238"  BorderThickness="1" RenderTransformOrigin="0.5,0.5" CornerRadius="90,90,90,90" BorderBrush="Black">
+            <Border.Background>
+                <ImageBrush ImageSource="/img/maxresdefault.jpg"  >
+                    <ImageBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5" ScaleX="2" ScaleY="1.4"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ImageBrush.RelativeTransform>
+                </ImageBrush>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <TextBlock Text="Rizu" Margin="1362,582,110,282" FontSize="22" FontFamily="Candara" Foreground="#FF001AF7"/>
+        <TextBlock Text="Writer" Margin="1362,618,185,261" FontSize="18" FontFamily="Candara Light" Foreground="#FF7A88FF"/>
+        <Image Margin="1415,623,166,261" Source="/img/icons8-рука-с-ручкой-50.png" Stretch="Fill" RenderTransformOrigin="0.789,0.778"/>
+        <TextBlock Margin="66,782,1149,60" FontSize="11" Foreground="#FF6F7EFF"><Run Text="Тут должна быть кнопка "/><Run Language="ru-ru" Text="бусти "/><LineBreak/><Run Language="ru-ru" Text="но пока без нее."/></TextBlock>
+        <Button x:Name="btn_Копировать" Margin="-154,175,1708,667" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Access">
+            <Button.Background>
+                <ImageBrush ImageSource="/img/icons8-галочка-40.png"/>
+            </Button.Background>
+        </Button>
+
+        <Border  Background="#FF11C7E8" Margin="-187,87,1675,745">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="100" Opacity="0.3"/>
+            </Border.Effect>
+            <TextBox   x:Name="accesstoken" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Text="Токен" Background="{x:Null}" Foreground="#FF001AF7" FontSize="36" FontFamily="Segoe UI Light" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" />
+        </Border>
+
+    </Grid>
+</Window>
+ 
